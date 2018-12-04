@@ -1,0 +1,21 @@
+.container{
+        width:100%;
+        height:100%;
+        
+        margin:1px;
+        padding:1px;
+    }
+    .header{
+        width: 98%;
+        height:15%;
+        border:2px solid #C2FC33;
+        background-color:#C2FC33; 
+        margin:10px;
+        padding: 1px;
+        border-radius: 20px; }
+       form{
+           width: 38%;
+           margin-top: 100px;
+           height: auto;
+           background-color: antiquewhite; 
+       }
