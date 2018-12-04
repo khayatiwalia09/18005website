@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+   <style>
+    .container{
+        width:100%;
+        height:100%;
+        
+        margin:1px;
+        padding:1px;
+    }
+    .header{
+        width: 98%;
+        height:15%;
+        border:2px solid #C2FC33;
+        background-color:#C2FC33; 
+        margin:10px;
+        padding: 1px;
+        border-radius: 20px; }
+       form{
+           width: 38%;
+           margin-top: 100px;
+           height: auto;
+           background-color: antiquewhite; 
+       }
+    </style>
+    <script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+   
+    
+    
+    </head>
+<body background= "../images/white.jpg" style="height: 100%;width: 100%;">
+    <div class="container" >
+        
+        <div class="header"><img src="../images/bg1.jpg" style="float: left;border-radius: 20px;width: 10%;height:100%;"><h1 style="color: hotpink;font-family:cursive"><center>Passion4Fashions.in</center></h1>
+        <center>
+        
+        <form name="myForm" action="finalmain.html"
+onsubmit="return validateForm()" method="post">
+        <fieldset style="width:95%">
+         <legend style="color: black;"><b>Log-in</b></legend><br><br><br>
+            <label style="color:blue"><strong>User name</strong></label><br><input type="text" name="fname" required maxlength="8" style="color:green;r"/><br><br><br>
+            <label style="color:blue"><strong>Password</strong></label><br><input type="password" name="password" required min="5" maxlength="8" style="color: green"/><br><br><br>
+       
+            <input type="submit" value="Log-in" style="color:blue;background-color: hotpink;float: left"/>
+           
+            <input type="reset" value="Clear All" style="color:blue;float:right;background-color: hotpink;"/>
+     
+       </fieldset>
+    </form>
+            
+    </center>
+            </div>
+    </div>
+    </body>
+</html>
